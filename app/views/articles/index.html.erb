@@ -1,5 +1,7 @@
 <h1>All Articles</h1>
 
+<h2><%= link_to "Sort Articles by Tags", tags_path%></h2>
+
 <ul id = "articles">
     <% @articles.each do |article| %>
         <li>
