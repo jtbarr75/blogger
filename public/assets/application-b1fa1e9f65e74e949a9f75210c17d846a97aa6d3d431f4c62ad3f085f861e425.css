@@ -1,0 +1,2085 @@
+.tags a{text-decoration: none;}
+/* @charset "UTF-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}
+body{line-height:1;color:black;background:white}ol,ul{list-style:none}
+table{border-collapse:separate;border-spacing:0;vertical-align:middle}
+caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
+q,blockquote{quotes:"" ""}
+q:before,q:after,blockquote:before,blockquote:after{content:""}
+a img{border:none}
+.fancy-button-reset-base-class,input[type=submit]{font-family:"Lucida Grande",Lucida,Arial,sans-serif;background:url('/images/button_bg.png?1301401396') repeat-x bottom left;margin:0;width:auto;overflow:visible;display:inline-block;cursor:pointer;text-decoration:none;border-style:solid;font-weight:bold}.fancy-button-reset-base-class::-moz-focus-inner,input[type=submit]::-moz-focus-inner{border:none;padding:0}.fancy-button-reset-base-class:focus,input[type=submit]:focus{outline:none}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{margin:0;padding:0;border:0;outline:0;display:block}.headings,h1{font-family:"Yanone Kaffeesatz", sans}html{background:#d3dd8a;-moz-background-size:80px 80px;-webkit-background-size:80px 80px;-o-background-size:80px 80px;background-size:80px 80px;background-image:-webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(25%, rgba(255,255,255,0.1)), color-stop(25%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,0.1)), color-stop(75%, rgba(255,255,255,0.1)), color-stop(75%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));background-image:-moz-linear-gradient(left top, rgba(255,255,255,0.1) 25%,rgba(255,255,255,0) 25%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.1) 75%,rgba(255,255,255,0) 75%,rgba(255,255,255,0));background-image:linear-gradient(left top, rgba(255,255,255,0.1) 25%,rgba(255,255,255,0) 25%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.1) 75%,rgba(255,255,255,0) 75%,rgba(255,255,255,0))}
+body{font-family:"Helvetica Neue", Helvetica, Arial, sans;background:#fff;margin:50px auto 30px;color:#2d4159;padding:20px;width:85%;min-width:600px;max-width:1250px;min-height:280px;position:relative;line-height:1.25em;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;-moz-border-radius:6px;-webkit-border-radius:6px;-o-border-radius:6px;-ms-border-radius:6px;-khtml-border-radius:6px;border-radius:6px;-moz-background-clip:padding;-webkit-background-clip:padding;-o-background-clip:padding-box;-ms-background-clip:padding-box;-khtml-background-clip:padding-box;background-clip:padding-box}
+body:before{content:" ";z-index:-2;position:absolute;left:-4px;right:8px;top:8px;height:260px;background:#2b445c;-moz-border-radius:6px;-webkit-border-radius:6px;-o-border-radius:6px;-ms-border-radius:6px;-khtml-border-radius:6px;border-radius:6px;-moz-box-shadow:rgba(0, 0, 0, 0.15) -2px 3px 3px;-webkit-box-shadow:rgba(0, 0, 0, 0.15) -2px 3px 3px;-o-box-shadow:rgba(0, 0, 0, 0.15) -2px 3px 3px;box-shadow:rgba(0, 0, 0, 0.15) -2px 3px 3px;-moz-background-clip:padding;-webkit-background-clip:padding;-o-background-clip:padding-box;-ms-background-clip:padding-box;-khtml-background-clip:padding-box;background-clip:padding-box;-moz-transform:rotate(-2deg);-webkit-transform:rotate(-2deg);-o-transform:rotate(-2deg);-ms-transform:rotate(-2deg);transform:rotate(-2deg)}body:after{content:" ";position:absolute;top:0;bottom:0;left:0;right:0;bottom:2px;-moz-border-radius:6px;-webkit-border-radius:6px;-o-border-radius:6px;-ms-border-radius:6px;-khtml-border-radius:6px;border-radius:6px;background:#000;z-index:-1;-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 2px 5px 1px;-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 2px 5px 1px;-o-box-shadow:rgba(0, 0, 0, 0.3) 0 2px 5px 1px;box-shadow:rgba(0, 0, 0, 0.3) 0 2px 5px 1px}a{color:#2d4159}a:hover{color:#233245}p.flash{-moz-box-shadow:rgba(0, 0, 0, 0.5) 0 1px 3px;-webkit-box-shadow:rgba(0, 0, 0, 0.5) 0 1px 3px;-o-box-shadow:rgba(0, 0, 0, 0.5) 0 1px 3px;box-shadow:rgba(0, 0, 0, 0.5) 0 1px 3px;-moz-border-radius-bottomleft:6px;-webkit-border-bottom-left-radius:6px;-o-border-bottom-left-radius:6px;-ms-border-bottom-left-radius:6px;-khtml-border-bottom-left-radius:6px;border-bottom-left-radius:6px;-moz-border-radius-bottomright:6px;-webkit-border-bottom-right-radius:6px;-o-border-bottom-right-radius:6px;-ms-border-bottom-right-radius:6px;-khtml-border-bottom-right-radius:6px;border-bottom-right-radius:6px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.6)));background-image:-moz-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6));background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6));border:3px solid rgba(255, 255, 255, 0.5);-moz-background-clip:padding;-webkit-background-clip:padding;-o-background-clip:padding-box;-ms-background-clip:padding-box;-khtml-background-clip:padding-box;background-clip:padding-box;text-shadow:rgba(0, 0, 0, 0.6) 0 -1px;color:#fff;margin:0 auto;position:absolute;top:-51px;left:0;padding:.4em .8em;width:100%;text-align:center;border-top:0}p.flash:empty{height:0px;overflow:hidden;padding:0;border-width:0;-moz-box-shadow:none;-webkit-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:none}h1{-moz-border-radius-topleft:6px;-webkit-border-top-left-radius:6px;-o-border-top-left-radius:6px;-ms-border-top-left-radius:6px;-khtml-border-top-left-radius:6px;border-top-left-radius:6px;-moz-border-radius-topright:6px;-webkit-border-top-right-radius:6px;-o-border-top-right-radius:6px;-ms-border-top-right-radius:6px;-khtml-border-top-right-radius:6px;border-top-right-radius:6px;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #42678d), color-stop(100%, #223447));background-image:-moz-linear-gradient(#42678d,#223447);background-image:linear-gradient(#42678d,#223447);-moz-box-shadow:rgba(255, 255, 255, 0.15) 0 1px inset, white 0 1px;-webkit-box-shadow:rgba(255, 255, 255, 0.15) 0 1px inset, white 0 1px;-o-box-shadow:rgba(255, 255, 255, 0.15) 0 1px inset, white 0 1px;box-shadow:rgba(255, 255, 255, 0.15) 0 1px inset, white 0 1px;margin:-20px -20px 15px;padding:20px;padding-right:180px;line-height:1em;font-weight:normal;color:#fff;position:relative;text-shadow:#192836 0 -2px;font-size:2.5em}h1:after{content:" ";position:absolute;left:0;right:0;height:15px;bottom:-16px;border-top:1px solid #e5e5e5;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(170,170,170,0.5)), color-stop(100%, rgba(255,255,255,0)));background-image:-moz-linear-gradient(rgba(170,170,170,0.5),rgba(255,255,255,0));background-image:linear-gradient(rgba(170,170,170,0.5),rgba(255,255,255,0));z-index:1}h2,h3,h4{color:#2d4159;font-size:1.3em;line-height:1.5em;margin:.2em 0 .5em}.comment{font-size:.9em;border-top:1px solid #ddd;background:#f5f5f5;padding:1em 0;border-bottom:1px dashed #ddd;color:#6c7c9a}.comment p{padding-left:12px;border-left:5px solid rgba(45, 65, 89, 0.5)}.comment p:first-child{font-weight:bold;color:#2d4159;padding-left:0;border:0;padding-bottom:1em}.comment + .comment{border-top:none}.comment + h3,.comment + h4{margin:0 0 .5em}.comment:nth-last-of-type(1){border-bottom:1px solid #ddd;margin-bottom:2em}h1,h2,h3,h4,h5,h6{font-weight:bold}.top-button,a.new_article,.article_actions a[href$='edit'],.article_actions a[data-method='delete']{position:absolute;top:26px;right:20px;display:inline-block;padding:4px 11px;font-size:.9em;-moz-box-shadow:rgba(255, 255, 255, 0.4) 0 -1px inset;-webkit-box-shadow:rgba(255, 255, 255, 0.4) 0 -1px inset;-o-box-shadow:rgba(255, 255, 255, 0.4) 0 -1px inset;box-shadow:rgba(255, 255, 255, 0.4) 0 -1px inset;-moz-border-radius:1.2em;-webkit-border-radius:1.2em;-o-border-radius:1.2em;-ms-border-radius:1.2em;-khtml-border-radius:1.2em;border-radius:1.2em;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));background-image:-moz-linear-gradient(#ffffff,#cccccc);background-image:linear-gradient(#ffffff,#cccccc);text-shadow:#fff 0 1px;color:#999999;text-decoration:none}.top-button:hover,a.new_article:hover,.article_actions a[href$='edit']:hover,.article_actions a[data-method='delete']:hover{color:#555}.top-button:active,a.new_article:active,.article_actions a[href$='edit']:active,.article_actions a[data-method='delete']:active{background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d9d9d9), color-stop(100%, #f5f5f5));background-image:-moz-linear-gradient(#d9d9d9,#f5f5f5);background-image:linear-gradient(#d9d9d9,#f5f5f5)}#sidebar + ul{padding-right:180px}#sidebar + ul li{padding-right:30px}#sidebar + ul:after{position:absolute;right:180px;top:0;bottom:0;content:" ";width:1px;background:#e5e5e5}#articles{margin:-15px -20px -20px;padding:0 20px 0;min-width:550px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;position:relative;-moz-border-radius-bottomleft:6px;-webkit-border-bottom-left-radius:6px;-o-border-bottom-left-radius:6px;-ms-border-bottom-left-radius:6px;-khtml-border-bottom-left-radius:6px;border-bottom-left-radius:6px;-moz-border-radius-bottomright:6px;-webkit-border-bottom-right-radius:6px;-o-border-bottom-right-radius:6px;-ms-border-bottom-right-radius:6px;-khtml-border-bottom-right-radius:6px;border-bottom-right-radius:6px;border-right:1px solid #e2e2e2}#articles li{border-bottom:1px dashed #e5e5e5;padding:1em 0 .8em;margin-right:20px;font-size:1.2em;position:relative}#articles li:last-child{-moz-border-radius-bottomleft:6px;-webkit-border-bottom-left-radius:6px;-o-border-bottom-left-radius:6px;-ms-border-bottom-left-radius:6px;-khtml-border-bottom-left-radius:6px;border-bottom-left-radius:6px;border-bottom:0}#articles li > a:first-child{font-weight:bold;display:block;color:#2d4159;padding-bottom:.1em}#articles .actions{border-left:1px dotted #ddd;padding-left:8px;margin-left:3px;line-height:1em;position:relative;top:2px}#articles .actions a{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=20);opacity:0.2}#articles .actions a:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);opacity:0.4}#articles .tag_list{display:inline-block;font-size:.8em;padding-top:.5em;color:#999}.article_actions{border-bottom:1px dashed #ddd;margin-bottom:.7em;padding-bottom:.7em;font-size:.9em;overflow:hidden;*zoom:1;text-align:right}.article_actions a{float:left;color:#999999}.article_actions a:hover img{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);opacity:0.6}.article_actions img{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=20);opacity:0.2;position:relative;top:2px}.article_actions a[href$='edit'],.article_actions a[data-method='delete']{text-decoration:none;float:none;margin-left:.5em;padding:4px 12px 3px 8px}.article_actions a[data-method='delete']{right:90px}p.tag_list{border-top:1px dashed #ddd;margin:1em 0;padding-top:.5em;font-size:.9em;color:#999}#sidebar{font-weight:bold;width:150px;padding:15px 10px;float:right;margin:-15px -20px 0 0;position:relative;z-index:1}#sidebar ul{margin:.5em 0;font-weight:normal}#sidebar ul a{color:#6c7c9a}.input,form input[type=text],form input[type=password],form textarea{width:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;padding:.3em .4em;border:1px solid #ccc;background-color:#f5f5f5;color:#1f2d3e;font-size:1.3em}.input:focus,form input[type=text]:focus,form input[type=password]:focus,form textarea:focus{outline:0;-moz-box-shadow:rgba(129, 177, 223, 0.7) 0 0 5px 1px inset;-webkit-box-shadow:rgba(129, 177, 223, 0.7) 0 0 5px 1px inset;-o-box-shadow:rgba(129, 177, 223, 0.7) 0 0 5px 1px inset;box-shadow:rgba(129, 177, 223, 0.7) 0 0 5px 1px inset;border-color:#81b1df;background-color:#fff}form input[type=text], form input[type=password]{margin:0}form p{padding:0;margin-bottom:.6em}form label{color:#6c7c9a;font-size:.9em;font-weight:bold;line-height:1.5em;padding-bottom:.2em;display:inline-block;text-transform:uppercase}form textarea{height:12em;font-size:1.1em}input[type=submit]{-moz-border-radius:6px;-webkit-border-radius:6px;-o-border-radius:6px;-ms-border-radius:6px;-khtml-border-radius:6px;border-radius:6px;font-size:18px;line-height:1.2em;padding:0.3em 1em;border-width:1px;background-color:#134e89;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #81a2c3), color-stop(10%, #4b749e), color-stop(50%, #2d4660), color-stop(50%, #283f55), color-stop(100%, #395878));background-image:-moz-linear-gradient(#81a2c3,#4b749e 10%,#2d4660 50%,#283f55 50%,#395878);background-image:linear-gradient(#81a2c3,#4b749e 10%,#2d4660 50%,#283f55 50%,#395878);border-color:#192836;text-shadow:#030e19 0px 1px 1px;-moz-box-shadow:rgba(255, 255, 255, 0.306) 0 0 0.1em 1px inset;-webkit-box-shadow:rgba(255, 255, 255, 0.306) 0 0 0.1em 1px inset;-o-box-shadow:rgba(255, 255, 255, 0.306) 0 0 0.1em 1px inset;box-shadow:rgba(255, 255, 255, 0.306) 0 0 0.1em 1px inset;-moz-background-clip:padding;-webkit-background-clip:padding;-o-background-clip:padding-box;-ms-background-clip:padding-box;-khtml-background-clip:padding-box;background-clip:padding-box;font-size:1.2em}input[type=submit],input[type=submit]:visited{color:#fff}input[type=submit]:hover,input[type=submit]:focus{background-color:#11467c;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #769bbf), color-stop(10%, #466d94), color-stop(50%, #283f55), color-stop(50%, #23374b), color-stop(100%, #34516d));background-image:-moz-linear-gradient(#769bbf,#466d94 10%,#283f55 50%,#23374b 50%,#34516d);background-image:linear-gradient(#769bbf,#466d94 10%,#283f55 50%,#23374b 50%,#34516d);border-color:#15202c;text-shadow:#02070c 0px 1px 1px}input[type=submit]:hover,input[type=submit]:hover:visited,input[type=submit]:focus,input[type=submit]:focus:visited{color:#fff}input[type=submit]:active{background-color:#0f3f6e;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #283f55), color-stop(30%, #2b445c), color-stop(50%, #253a4e), color-stop(50%, #203244), color-stop(100%, #355371));background-image:-moz-linear-gradient(#283f55,#2b445c 30%,#253a4e 50%,#203244 50%,#355371);background-image:linear-gradient(#283f55,#2b445c 30%,#253a4e 50%,#203244 50%,#355371);border-color:#101821;text-shadow:#000 0px -1px -1px;-moz-box-shadow:#192836 0 0.08em 0.2em 1px inset;-webkit-box-shadow:#192836 0 0.08em 0.2em 1px inset;-o-box-shadow:#192836 0 0.08em 0.2em 1px inset;box-shadow:#192836 0 0.08em 0.2em 1px inset}input[type=submit]:active,input[type=submit]:active:visited{color:#fff}
+div.field_with_errors label{color: red; font-weight:bold}
+div.field_with_errors input{border: 3px solid red} */
+
+/* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+/* line 4, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 4, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+/* line 6, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 6, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+body {
+  margin: 0;
+}
+
+/* line 7, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+  display: block;
+}
+
+/* line 7, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+summary {
+  display: list-item;
+}
+
+/* line 8, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+}
+
+/* line 8, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 9, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 9, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 10, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 10, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+a:active, a:hover {
+  outline-width: 0;
+}
+
+/* line 11, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/* line 12, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+b, strong {
+  font-weight: bolder;
+}
+
+/* line 12, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 12, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 13, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 13, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 14, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 14, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 14, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 14, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+img {
+  border-style: none;
+}
+
+/* line 15, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+/* line 15, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* line 16, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+button, input, select, textarea, optgroup {
+  font: inherit;
+  margin: 0;
+}
+
+/* line 16, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 17, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+button, input {
+  overflow: visible;
+}
+
+/* line 17, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 18, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+button, [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+/* line 19, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* line 20, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* line 21, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 22, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 22, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 23, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+[type=checkbox], [type=radio] {
+  padding: 0;
+}
+
+/* line 24, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 25, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* line 26, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 27, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* End extract */
+/* line 29, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+html, body {
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* line 29, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+html {
+  overflow-x: hidden;
+}
+
+/* line 30, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 30, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+h2 {
+  font-size: 30px;
+}
+
+/* line 30, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 30, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+h4 {
+  font-size: 20px;
+}
+
+/* line 30, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 30, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+h6 {
+  font-size: 16px;
+}
+
+/* line 30, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-serif {
+  font-family: serif;
+}
+
+/* line 31, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+/* line 31, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-wide {
+  letter-spacing: 4px;
+}
+
+/* line 32, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/* line 33, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 33, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 33, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+a {
+  color: inherit;
+}
+
+/* line 34, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-table, .w3-table-all {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+}
+
+/* line 34, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-table-all {
+  border: 1px solid #ccc;
+}
+
+/* line 35, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bordered tr, .w3-table-all tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 35, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-striped tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* line 36, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-table-all tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* line 36, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-table-all tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* line 37, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-hoverable tbody tr:hover, .w3-ul.w3-hoverable li:hover {
+  background-color: #ccc;
+}
+
+/* line 37, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-centered tr th, .w3-centered tr td {
+  text-align: center;
+}
+
+/* line 38, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* line 39, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-table th:first-child, .w3-table td:first-child, .w3-table-all th:first-child, .w3-table-all td:first-child {
+  padding-left: 16px;
+}
+
+/* line 40, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-btn, .w3-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* line 41, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 42, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-btn, .w3-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 43, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-disabled, .w3-btn:disabled, .w3-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+/* line 43, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-disabled *, :disabled * {
+  pointer-events: none;
+}
+
+/* line 44, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-btn.w3-disabled:hover, .w3-btn:disabled:hover {
+  box-shadow: none;
+}
+
+/* line 45, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-badge, .w3-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+/* line 45, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-badge {
+  border-radius: 50%;
+}
+
+/* line 46, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 46, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-ul li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 46, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-ul li:last-child {
+  border-bottom: none;
+}
+
+/* line 47, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-tooltip, .w3-display-container {
+  position: relative;
+}
+
+/* line 47, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-tooltip .w3-text {
+  display: none;
+}
+
+/* line 47, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-tooltip:hover .w3-text {
+  display: inline-block;
+}
+
+/* line 48, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-ripple:active {
+  opacity: 0.5;
+}
+
+/* line 48, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-ripple {
+  transition: opacity 0s;
+}
+
+/* line 49, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+/* line 50, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-select {
+  padding: 9px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 51, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-dropdown-click, .w3-dropdown-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* line 52, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-dropdown-hover:hover .w3-dropdown-content {
+  display: block;
+}
+
+/* line 53, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-dropdown-hover:first-child, .w3-dropdown-click:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* line 54, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-click:hover > .w3-button:first-child {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* line 55, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-dropdown-content {
+  cursor: auto;
+  color: #000;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+/* line 56, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-check, .w3-radio {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+}
+
+/* line 57, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+}
+
+/* line 58, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bar-block .w3-dropdown-hover, .w3-bar-block .w3-dropdown-click {
+  width: 100%;
+}
+
+/* line 59, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bar-block .w3-dropdown-hover .w3-dropdown-content, .w3-bar-block .w3-dropdown-click .w3-dropdown-content {
+  min-width: 100%;
+}
+
+/* line 60, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-click .w3-button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+}
+
+/* line 61, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-main, #main {
+  transition: margin-left .4s;
+}
+
+/* line 62, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 63, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-modal-content {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 600px;
+}
+
+/* line 64, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bar {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 64, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-center .w3-bar {
+  display: inline-block;
+  width: auto;
+}
+
+/* line 65, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bar .w3-bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
+/* line 66, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bar .w3-dropdown-hover, .w3-bar .w3-dropdown-click {
+  position: static;
+  float: left;
+}
+
+/* line 67, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bar .w3-button {
+  white-space: normal;
+}
+
+/* line 68, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bar-block .w3-bar-item {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+}
+
+/* line 69, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bar-block.w3-center .w3-bar-item {
+  text-align: center;
+}
+
+/* line 69, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-block {
+  display: block;
+  width: 100%;
+}
+
+/* line 70, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-responsive {
+  display: block;
+  overflow-x: auto;
+}
+
+/* line 71, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-container:after, .w3-container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .w3-row-padding:after, .w3-row-padding:before,
+.w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 73, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+  float: left;
+  width: 100%;
+}
+
+/* line 74, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s1 {
+  width: 8.33333%;
+}
+
+/* line 74, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s2 {
+  width: 16.66666%;
+}
+
+/* line 74, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s3 {
+  width: 24.99999%;
+}
+
+/* line 74, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s4 {
+  width: 33.33333%;
+}
+
+/* line 75, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s5 {
+  width: 41.66666%;
+}
+
+/* line 75, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s6 {
+  width: 49.99999%;
+}
+
+/* line 75, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s7 {
+  width: 58.33333%;
+}
+
+/* line 75, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s8 {
+  width: 66.66666%;
+}
+
+/* line 76, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s9 {
+  width: 74.99999%;
+}
+
+/* line 76, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s10 {
+  width: 83.33333%;
+}
+
+/* line 76, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s11 {
+  width: 91.66666%;
+}
+
+/* line 76, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-col.s12 {
+  width: 99.99999%;
+}
+
+@media (min-width: 601px) {
+  /* line 77, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m1 {
+    width: 8.33333%;
+  }
+
+  /* line 77, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m2 {
+    width: 16.66666%;
+  }
+
+  /* line 77, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m3, .w3-quarter {
+    width: 24.99999%;
+  }
+
+  /* line 77, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m4, .w3-third {
+    width: 33.33333%;
+  }
+
+  /* line 78, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m5 {
+    width: 41.66666%;
+  }
+
+  /* line 78, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m6, .w3-half {
+    width: 49.99999%;
+  }
+
+  /* line 78, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m7 {
+    width: 58.33333%;
+  }
+
+  /* line 78, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m8, .w3-twothird {
+    width: 66.66666%;
+  }
+
+  /* line 79, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m9, .w3-threequarter {
+    width: 74.99999%;
+  }
+
+  /* line 79, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m10 {
+    width: 83.33333%;
+  }
+
+  /* line 79, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m11 {
+    width: 91.66666%;
+  }
+
+  /* line 79, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.m12 {
+    width: 99.99999%;
+  }
+}
+@media (min-width: 993px) {
+  /* line 80, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l1 {
+    width: 8.33333%;
+  }
+
+  /* line 80, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l2 {
+    width: 16.66666%;
+  }
+
+  /* line 80, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l3 {
+    width: 24.99999%;
+  }
+
+  /* line 80, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l4 {
+    width: 33.33333%;
+  }
+
+  /* line 81, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l5 {
+    width: 41.66666%;
+  }
+
+  /* line 81, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l6 {
+    width: 49.99999%;
+  }
+
+  /* line 81, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l7 {
+    width: 58.33333%;
+  }
+
+  /* line 81, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l8 {
+    width: 66.66666%;
+  }
+
+  /* line 82, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l9 {
+    width: 74.99999%;
+  }
+
+  /* line 82, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l10 {
+    width: 83.33333%;
+  }
+
+  /* line 82, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l11 {
+    width: 91.66666%;
+  }
+
+  /* line 82, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-col.l12 {
+    width: 99.99999%;
+  }
+}
+/* line 83, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-rest {
+  overflow: hidden;
+}
+
+/* line 83, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-stretch {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+/* line 84, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-content, .w3-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 84, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-content {
+  max-width: 980px;
+}
+
+/* line 84, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-auto {
+  max-width: 1140px;
+}
+
+/* line 85, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-cell-row {
+  display: table;
+  width: 100%;
+}
+
+/* line 85, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-cell {
+  display: table-cell;
+}
+
+/* line 86, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-cell-top {
+  vertical-align: top;
+}
+
+/* line 86, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-cell-middle {
+  vertical-align: middle;
+}
+
+/* line 86, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-cell-bottom {
+  vertical-align: bottom;
+}
+
+/* line 87, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-hide {
+  display: none !important;
+}
+
+/* line 87, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-show-block, .w3-show {
+  display: block !important;
+}
+
+/* line 87, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-show-inline-block {
+  display: inline-block !important;
+}
+
+@media (max-width: 1205px) {
+  /* line 88, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-auto {
+    max-width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 89, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-modal-content {
+    margin: 0 10px;
+    width: auto !important;
+  }
+
+  /* line 89, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-modal {
+    padding-top: 30px;
+  }
+
+  /* line 90, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-dropdown-hover.w3-mobile .w3-dropdown-content, .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+    position: relative;
+  }
+
+  /* line 91, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-hide-small {
+    display: none !important;
+  }
+
+  /* line 91, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-mobile {
+    display: block;
+    width: 100% !important;
+  }
+
+  /* line 91, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-bar-item.w3-mobile, .w3-dropdown-hover.w3-mobile, .w3-dropdown-click.w3-mobile {
+    text-align: center;
+  }
+
+  /* line 92, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-dropdown-hover.w3-mobile, .w3-dropdown-hover.w3-mobile .w3-btn, .w3-dropdown-hover.w3-mobile .w3-button, .w3-dropdown-click.w3-mobile, .w3-dropdown-click.w3-mobile .w3-btn, .w3-dropdown-click.w3-mobile .w3-button {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 93, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-modal-content {
+    width: 500px;
+  }
+
+  /* line 93, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-modal {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 993px) {
+  /* line 94, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-modal-content {
+    width: 900px;
+  }
+
+  /* line 94, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-hide-large {
+    display: none !important;
+  }
+
+  /* line 94, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-sidebar.w3-collapse {
+    display: block !important;
+  }
+}
+@media (max-width: 992px) and (min-width: 601px) {
+  /* line 95, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-hide-medium {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  /* line 96, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-sidebar.w3-collapse {
+    display: none;
+  }
+
+  /* line 96, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* line 96, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+  .w3-auto {
+    max-width: 100%;
+  }
+}
+/* line 97, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-top, .w3-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 97, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-top {
+  top: 0;
+}
+
+/* line 97, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bottom {
+  bottom: 0;
+}
+
+/* line 98, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* line 99, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-topleft {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 99, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-topright {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 100, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-bottomleft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* line 100, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-bottomright {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 101, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* line 102, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+
+/* line 103, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+
+/* line 104, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-topmiddle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+/* line 105, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-bottommiddle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+/* line 106, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-container:hover .w3-display-hover {
+  display: block;
+}
+
+/* line 106, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-container:hover span.w3-display-hover {
+  display: inline-block;
+}
+
+/* line 106, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-hover {
+  display: none;
+}
+
+/* line 107, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-display-position {
+  position: absolute;
+}
+
+/* line 108, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-circle {
+  border-radius: 50%;
+}
+
+/* line 109, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-round-small {
+  border-radius: 2px;
+}
+
+/* line 109, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-round, .w3-round-medium {
+  border-radius: 4px;
+}
+
+/* line 109, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-round-large {
+  border-radius: 8px;
+}
+
+/* line 109, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-round-xlarge {
+  border-radius: 16px;
+}
+
+/* line 109, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-round-xxlarge {
+  border-radius: 32px;
+}
+
+/* line 110, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-row-padding, .w3-row-padding > .w3-half, .w3-row-padding > .w3-third, .w3-row-padding > .w3-twothird, .w3-row-padding > .w3-threequarter, .w3-row-padding > .w3-quarter, .w3-row-padding > .w3-col {
+  padding: 0 8px;
+}
+
+/* line 111, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-container, .w3-panel {
+  padding: 0.01em 16px;
+}
+
+/* line 111, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-panel {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* line 112, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-code, .w3-codespan {
+  font-family: Consolas,"courier new";
+  font-size: 16px;
+}
+
+/* line 113, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-code {
+  width: auto;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-left: 4px solid #4CAF50;
+  word-wrap: break-word;
+}
+
+/* line 114, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-codespan {
+  color: crimson;
+  background-color: #f1f1f1;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 110%;
+}
+
+/* line 115, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-card, .w3-card-2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 116, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-card-4, .w3-hover-shadow:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 117, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-spin {
+  animation: w3-spin 2s infinite linear;
+}
+
+@keyframes w3-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/* line 118, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-animate-fading {
+  animation: fading 10s infinite;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 119, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-animate-opacity {
+  animation: opac 0.8s;
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 120, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-animate-top {
+  position: relative;
+  animation: animatetop 0.4s;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/* line 121, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-animate-left {
+  position: relative;
+  animation: animateleft 0.4s;
+}
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+/* line 122, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-animate-right {
+  position: relative;
+  animation: animateright 0.4s;
+}
+
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+/* line 123, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s;
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/* line 124, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-animate-zoom {
+  animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* line 125, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-animate-input {
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 125, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-animate-input:focus {
+  width: 100% !important;
+}
+
+/* line 126, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-opacity, .w3-hover-opacity:hover {
+  opacity: 0.60;
+}
+
+/* line 126, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-opacity-off, .w3-hover-opacity-off:hover {
+  opacity: 1;
+}
+
+/* line 127, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-opacity-max {
+  opacity: 0.25;
+}
+
+/* line 127, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-opacity-min {
+  opacity: 0.75;
+}
+
+/* line 128, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-greyscale-max, .w3-grayscale-max, .w3-hover-greyscale:hover, .w3-hover-grayscale:hover {
+  filter: grayscale(100%);
+}
+
+/* line 129, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-greyscale, .w3-grayscale {
+  filter: grayscale(75%);
+}
+
+/* line 129, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-greyscale-min, .w3-grayscale-min {
+  filter: grayscale(50%);
+}
+
+/* line 130, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-sepia {
+  filter: sepia(75%);
+}
+
+/* line 130, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-sepia-max, .w3-hover-sepia:hover {
+  filter: sepia(100%);
+}
+
+/* line 130, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-sepia-min {
+  filter: sepia(50%);
+}
+
+/* line 131, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-tiny {
+  font-size: 10px !important;
+}
+
+/* line 131, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-small {
+  font-size: 12px !important;
+}
+
+/* line 131, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-medium {
+  font-size: 15px !important;
+}
+
+/* line 131, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-large {
+  font-size: 18px !important;
+}
+
+/* line 132, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-xlarge {
+  font-size: 24px !important;
+}
+
+/* line 132, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-xxlarge {
+  font-size: 36px !important;
+}
+
+/* line 132, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-xxxlarge {
+  font-size: 48px !important;
+}
+
+/* line 132, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-jumbo {
+  font-size: 64px !important;
+}
+
+/* line 133, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-left-align {
+  text-align: left !important;
+}
+
+/* line 133, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-right-align {
+  text-align: right !important;
+}
+
+/* line 133, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-justify {
+  text-align: justify !important;
+}
+
+/* line 133, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-center {
+  text-align: center !important;
+}
+
+/* line 134, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-0 {
+  border: 0 !important;
+}
+
+/* line 134, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border {
+  border: 1px solid #ccc !important;
+}
+
+/* line 135, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-top {
+  border-top: 1px solid #ccc !important;
+}
+
+/* line 135, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-bottom {
+  border-bottom: 1px solid #ccc !important;
+}
+
+/* line 136, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-left {
+  border-left: 1px solid #ccc !important;
+}
+
+/* line 136, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-right {
+  border-right: 1px solid #ccc !important;
+}
+
+/* line 137, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-topbar {
+  border-top: 6px solid #ccc !important;
+}
+
+/* line 137, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-bottombar {
+  border-bottom: 6px solid #ccc !important;
+}
+
+/* line 138, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-leftbar {
+  border-left: 6px solid #ccc !important;
+}
+
+/* line 138, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-rightbar {
+  border-right: 6px solid #ccc !important;
+}
+
+/* line 139, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-section, .w3-code {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+/* line 140, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-margin {
+  margin: 16px !important;
+}
+
+/* line 140, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-margin-top {
+  margin-top: 16px !important;
+}
+
+/* line 140, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-margin-bottom {
+  margin-bottom: 16px !important;
+}
+
+/* line 141, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-margin-left {
+  margin-left: 16px !important;
+}
+
+/* line 141, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-margin-right {
+  margin-right: 16px !important;
+}
+
+/* line 142, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-padding-small {
+  padding: 4px 8px !important;
+}
+
+/* line 142, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-padding {
+  padding: 8px 16px !important;
+}
+
+/* line 142, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-padding-large {
+  padding: 12px 24px !important;
+}
+
+/* line 143, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+/* line 143, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-padding-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+/* line 144, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-padding-32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+/* line 144, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-padding-48 {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+/* line 145, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-padding-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+/* line 146, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-left {
+  float: left !important;
+}
+
+/* line 146, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-right {
+  float: right !important;
+}
+
+/* line 147, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-button:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+
+/* line 148, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-transparent, .w3-hover-none:hover {
+  background-color: transparent !important;
+}
+
+/* line 149, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-hover-none:hover {
+  box-shadow: none !important;
+}
+
+/* Colors */
+/* line 151, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-amber, .w3-hover-amber:hover {
+  color: #000 !important;
+  background-color: #ffc107 !important;
+}
+
+/* line 152, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-aqua, .w3-hover-aqua:hover {
+  color: #000 !important;
+  background-color: #00ffff !important;
+}
+
+/* line 153, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-blue, .w3-hover-blue:hover {
+  color: #fff !important;
+  background-color: #2196F3 !important;
+}
+
+/* line 154, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-light-blue, .w3-hover-light-blue:hover {
+  color: #000 !important;
+  background-color: #87CEEB !important;
+}
+
+/* line 155, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-brown, .w3-hover-brown:hover {
+  color: #fff !important;
+  background-color: #795548 !important;
+}
+
+/* line 156, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-cyan, .w3-hover-cyan:hover {
+  color: #000 !important;
+  background-color: #00bcd4 !important;
+}
+
+/* line 157, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-blue-grey, .w3-hover-blue-grey:hover, .w3-blue-gray, .w3-hover-blue-gray:hover {
+  color: #fff !important;
+  background-color: #607d8b !important;
+}
+
+/* line 158, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-green, .w3-hover-green:hover {
+  color: #fff !important;
+  background-color: #4CAF50 !important;
+}
+
+/* line 159, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-light-green, .w3-hover-light-green:hover {
+  color: #000 !important;
+  background-color: #8bc34a !important;
+}
+
+/* line 160, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-indigo, .w3-hover-indigo:hover {
+  color: #fff !important;
+  background-color: #3f51b5 !important;
+}
+
+/* line 161, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-khaki, .w3-hover-khaki:hover {
+  color: #000 !important;
+  background-color: #f0e68c !important;
+}
+
+/* line 162, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-lime, .w3-hover-lime:hover {
+  color: #000 !important;
+  background-color: #cddc39 !important;
+}
+
+/* line 163, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-orange, .w3-hover-orange:hover {
+  color: #000 !important;
+  background-color: #ff9800 !important;
+}
+
+/* line 164, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-deep-orange, .w3-hover-deep-orange:hover {
+  color: #fff !important;
+  background-color: #ff5722 !important;
+}
+
+/* line 165, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-pink, .w3-hover-pink:hover {
+  color: #fff !important;
+  background-color: #e91e63 !important;
+}
+
+/* line 166, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-purple, .w3-hover-purple:hover {
+  color: #fff !important;
+  background-color: #9c27b0 !important;
+}
+
+/* line 167, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-deep-purple, .w3-hover-deep-purple:hover {
+  color: #fff !important;
+  background-color: #673ab7 !important;
+}
+
+/* line 168, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-red, .w3-hover-red:hover {
+  color: #fff !important;
+  background-color: #f44336 !important;
+}
+
+/* line 169, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-sand, .w3-hover-sand:hover {
+  color: #000 !important;
+  background-color: #fdf5e6 !important;
+}
+
+/* line 170, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-teal, .w3-hover-teal:hover {
+  color: #fff !important;
+  background-color: #009688 !important;
+}
+
+/* line 171, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-yellow, .w3-hover-yellow:hover {
+  color: #000 !important;
+  background-color: #ffeb3b !important;
+}
+
+/* line 172, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-white, .w3-hover-white:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+/* line 173, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-black, .w3-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+/* line 174, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-grey, .w3-hover-grey:hover, .w3-gray, .w3-hover-gray:hover {
+  color: #000 !important;
+  background-color: #9e9e9e !important;
+}
+
+/* line 175, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+}
+
+/* line 176, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-dark-grey, .w3-hover-dark-grey:hover, .w3-dark-gray, .w3-hover-dark-gray:hover {
+  color: #fff !important;
+  background-color: #616161 !important;
+}
+
+/* line 177, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-pale-red, .w3-hover-pale-red:hover {
+  color: #000 !important;
+  background-color: #ffdddd !important;
+}
+
+/* line 178, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-pale-green, .w3-hover-pale-green:hover {
+  color: #000 !important;
+  background-color: #ddffdd !important;
+}
+
+/* line 179, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-pale-yellow, .w3-hover-pale-yellow:hover {
+  color: #000 !important;
+  background-color: #ffffcc !important;
+}
+
+/* line 180, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-pale-blue, .w3-hover-pale-blue:hover {
+  color: #000 !important;
+  background-color: #ddffff !important;
+}
+
+/* line 181, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-amber, .w3-hover-text-amber:hover {
+  color: #ffc107 !important;
+}
+
+/* line 182, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-aqua, .w3-hover-text-aqua:hover {
+  color: #00ffff !important;
+}
+
+/* line 183, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-blue, .w3-hover-text-blue:hover {
+  color: #2196F3 !important;
+}
+
+/* line 184, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-light-blue, .w3-hover-text-light-blue:hover {
+  color: #87CEEB !important;
+}
+
+/* line 185, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-brown, .w3-hover-text-brown:hover {
+  color: #795548 !important;
+}
+
+/* line 186, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-cyan, .w3-hover-text-cyan:hover {
+  color: #00bcd4 !important;
+}
+
+/* line 187, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-blue-grey, .w3-hover-text-blue-grey:hover, .w3-text-blue-gray, .w3-hover-text-blue-gray:hover {
+  color: #607d8b !important;
+}
+
+/* line 188, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-green, .w3-hover-text-green:hover {
+  color: #4CAF50 !important;
+}
+
+/* line 189, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-light-green, .w3-hover-text-light-green:hover {
+  color: #8bc34a !important;
+}
+
+/* line 190, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-indigo, .w3-hover-text-indigo:hover {
+  color: #3f51b5 !important;
+}
+
+/* line 191, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-khaki, .w3-hover-text-khaki:hover {
+  color: #b4aa50 !important;
+}
+
+/* line 192, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-lime, .w3-hover-text-lime:hover {
+  color: #cddc39 !important;
+}
+
+/* line 193, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-orange, .w3-hover-text-orange:hover {
+  color: #ff9800 !important;
+}
+
+/* line 194, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-deep-orange, .w3-hover-text-deep-orange:hover {
+  color: #ff5722 !important;
+}
+
+/* line 195, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-pink, .w3-hover-text-pink:hover {
+  color: #e91e63 !important;
+}
+
+/* line 196, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-purple, .w3-hover-text-purple:hover {
+  color: #9c27b0 !important;
+}
+
+/* line 197, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-deep-purple, .w3-hover-text-deep-purple:hover {
+  color: #673ab7 !important;
+}
+
+/* line 198, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-red, .w3-hover-text-red:hover {
+  color: #f44336 !important;
+}
+
+/* line 199, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-sand, .w3-hover-text-sand:hover {
+  color: #fdf5e6 !important;
+}
+
+/* line 200, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-teal, .w3-hover-text-teal:hover {
+  color: #009688 !important;
+}
+
+/* line 201, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-yellow, .w3-hover-text-yellow:hover {
+  color: #d2be0e !important;
+}
+
+/* line 202, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-white, .w3-hover-text-white:hover {
+  color: #fff !important;
+}
+
+/* line 203, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-black, .w3-hover-text-black:hover {
+  color: #000 !important;
+}
+
+/* line 204, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-grey, .w3-hover-text-grey:hover, .w3-text-gray, .w3-hover-text-gray:hover {
+  color: #757575 !important;
+}
+
+/* line 205, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-light-grey, .w3-hover-text-light-grey:hover, .w3-text-light-gray, .w3-hover-text-light-gray:hover {
+  color: #f1f1f1 !important;
+}
+
+/* line 206, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-text-dark-grey, .w3-hover-text-dark-grey:hover, .w3-text-dark-gray, .w3-hover-text-dark-gray:hover {
+  color: #3a3a3a !important;
+}
+
+/* line 207, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-amber, .w3-hover-border-amber:hover {
+  border-color: #ffc107 !important;
+}
+
+/* line 208, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-aqua, .w3-hover-border-aqua:hover {
+  border-color: #00ffff !important;
+}
+
+/* line 209, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-blue, .w3-hover-border-blue:hover {
+  border-color: #2196F3 !important;
+}
+
+/* line 210, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-light-blue, .w3-hover-border-light-blue:hover {
+  border-color: #87CEEB !important;
+}
+
+/* line 211, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-brown, .w3-hover-border-brown:hover {
+  border-color: #795548 !important;
+}
+
+/* line 212, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-cyan, .w3-hover-border-cyan:hover {
+  border-color: #00bcd4 !important;
+}
+
+/* line 213, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-blue-grey, .w3-hover-border-blue-grey:hover, .w3-border-blue-gray, .w3-hover-border-blue-gray:hover {
+  border-color: #607d8b !important;
+}
+
+/* line 214, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-green, .w3-hover-border-green:hover {
+  border-color: #4CAF50 !important;
+}
+
+/* line 215, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-light-green, .w3-hover-border-light-green:hover {
+  border-color: #8bc34a !important;
+}
+
+/* line 216, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-indigo, .w3-hover-border-indigo:hover {
+  border-color: #3f51b5 !important;
+}
+
+/* line 217, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-khaki, .w3-hover-border-khaki:hover {
+  border-color: #f0e68c !important;
+}
+
+/* line 218, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-lime, .w3-hover-border-lime:hover {
+  border-color: #cddc39 !important;
+}
+
+/* line 219, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-orange, .w3-hover-border-orange:hover {
+  border-color: #ff9800 !important;
+}
+
+/* line 220, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-deep-orange, .w3-hover-border-deep-orange:hover {
+  border-color: #ff5722 !important;
+}
+
+/* line 221, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-pink, .w3-hover-border-pink:hover {
+  border-color: #e91e63 !important;
+}
+
+/* line 222, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-purple, .w3-hover-border-purple:hover {
+  border-color: #9c27b0 !important;
+}
+
+/* line 223, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-deep-purple, .w3-hover-border-deep-purple:hover {
+  border-color: #673ab7 !important;
+}
+
+/* line 224, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-red, .w3-hover-border-red:hover {
+  border-color: #f44336 !important;
+}
+
+/* line 225, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-sand, .w3-hover-border-sand:hover {
+  border-color: #fdf5e6 !important;
+}
+
+/* line 226, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-teal, .w3-hover-border-teal:hover {
+  border-color: #009688 !important;
+}
+
+/* line 227, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-yellow, .w3-hover-border-yellow:hover {
+  border-color: #ffeb3b !important;
+}
+
+/* line 228, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-white, .w3-hover-border-white:hover {
+  border-color: #fff !important;
+}
+
+/* line 229, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-black, .w3-hover-border-black:hover {
+  border-color: #000 !important;
+}
+
+/* line 230, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-grey, .w3-hover-border-grey:hover, .w3-border-gray, .w3-hover-border-gray:hover {
+  border-color: #9e9e9e !important;
+}
+
+/* line 231, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-light-grey, .w3-hover-border-light-grey:hover, .w3-border-light-gray, .w3-hover-border-light-gray:hover {
+  border-color: #f1f1f1 !important;
+}
+
+/* line 232, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-dark-grey, .w3-hover-border-dark-grey:hover, .w3-border-dark-gray, .w3-hover-border-dark-gray:hover {
+  border-color: #616161 !important;
+}
+
+/* line 233, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-pale-red, .w3-hover-border-pale-red:hover {
+  border-color: #ffe7e7 !important;
+}
+
+/* line 233, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-pale-green, .w3-hover-border-pale-green:hover {
+  border-color: #e7ffe7 !important;
+}
+
+/* line 234, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-pale-yellow, .w3-hover-border-pale-yellow:hover {
+  border-color: #ffffcc !important;
+}
+
+/* line 234, /home/jason/Odin/Ruby/environment/blogger/app/assets/stylesheets/styles.css.scss */
+.w3-border-pale-blue, .w3-hover-border-pale-blue:hover {
+  border-color: #e7ffff !important;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

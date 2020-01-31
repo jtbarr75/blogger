@@ -1,42 +1,83 @@
-
-<header class="w3-container w3-center w3-padding-32"> 
-    <h1><b>MY BLOG</b></h1>
-    <p>Welcome to the blog of <span class="w3-tag">Jeeb</span></p>
-</header>
-
-<div class="w3-row">
-
-<h2><%= link_to "Sort Articles by Tags", tags_path%></h2>
-
 <!-- Blog entries -->
-<% @articles.each do |article| %>
-    <div class="w3-col l8 s12">
+<div class="w3-col l8 s12">
+    <% @articles.reverse.each do |article| %>
         <!-- Blog entry -->
         <div class="w3-card-4 w3-margin w3-white">
             <% if article.image.exists? %>
-                <%= image_tag article.image.url %><br/>
+                <%= image_tag(article.image.url, :class => "image-size") %><br/>
             <% end %>
             <div class="w3-container">
                 <h3><b><%= article.title %></b></h3>
-                <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+                <h5><span class="w3-opacity"><%= article.created_at.strftime("%B %d. %Y") %></span></h5>
             </div>
             <div class="w3-container">
-                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-                    tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                <p><%= article.body[0..200] + "..." %></p>
             </div>
             <div class="w3-row">
                 <%= link_to article_path(article) do %>
                     <div class="w3-col m8 s12">
-                        <p><button class="w3-button w3-padding-large w3-white w3-border"><b>CHECK OUT THIS LIT ARTICLE »</b></button></p>
+                        <p><button class="w3-button w3-padding-large w3-white w3-border"><b>CHECK OUT THIS GREAT ARTICLE »</b></button></p>
                     </div>
                 <% end %>
                 <div class="w3-col m4 w3-hide-small">
-                    <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+                    <p>
+                        <span class="w3-padding-large w3-right"><b>Comments  </b> 
+                        <span class="w3-tag"><%= article.comments.length %></span></span>
+                    </p>
                 </div>
             </div>
         </div>
         <hr>
-    </div>
-<% end %>
+    <% end %>
+</div>
 
+<!-- Sidebar -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-card w3-margin w3-margin-top">
+        <%= image_tag 'index.png' %>
+          <div class="w3-container w3-white">
+            <h4><b>Jason Barr</b></h4>
+            <p>I found this clip art of a penguin while searching for a placeholder image 
+                and decided that this entire is blog should be about penguins</p>
+          </div>
+      </div><hr>
+    
+      <!-- Popular Posts -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white popular-posts">
+          <% @articles.order("view_cont DESC")[0..2].each do |article| %>
+            <%= link_to article_path(article) do %>
+              <li class="w3-padding-16">
+                <span class="w3-large"><%= article.title %></span><br>
+                <span>Total Views: <%= article.view_cont %></span>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+      <hr> 
+
+      <!-- Labels / tags -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white tags">
+          <p>
+            <% Tag.all.each do |tag| %>
+              <%= link_to tag_path(tag) do %>
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">
+                  <%= tag.name %>
+                </span>
+              <% end %>
+            <% end %>
+          </p>
+        </div>
+      </div>
+    <!-- END Sidebar -->
+    </div>
 
