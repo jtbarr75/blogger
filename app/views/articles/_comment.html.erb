@@ -1,5 +1,8 @@
-<div>
-    <h4>Comment by <%= comment.author_name %><h4>
-    <p class = "comment"><%= comment.body %></p>
-    <p>Posted <%= distance_of_time_in_words(comment.article.created_at, comment.created_at) %> later</p>
+<div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+        <div>
+            <p class = "comment"><%= comment.body %></p>
+            <p><span class="w3-opacity"><%= "Posted by " + comment.author_name + " on " + comment.created_at.strftime("%B %d, %Y") %></span></p>
+        </div>
+    </div>
 </div>

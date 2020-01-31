@@ -1,13 +1,83 @@
-<h1>All Articles</h1>
-
-<h2><%= link_to "Sort Articles by Tags", tags_path%></h2>
-
-<ul id = "articles">
-    <% @articles.each do |article| %>
-        <li>
-            <%= link_to article.title, article_path(article), class: 'article_title' %>
-        </li>
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+    <% @articles.reverse.each do |article| %>
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <% if article.image.exists? %>
+                <%= image_tag(article.image.url, :class => "image-size") %><br/>
+            <% end %>
+            <div class="w3-container">
+                <h3><b><%= article.title %></b></h3>
+                <h5><span class="w3-opacity"><%= article.created_at.strftime("%B %d. %Y") %></span></h5>
+            </div>
+            <div class="w3-container">
+                <p><%= article.body[0..200] + "..." %></p>
+            </div>
+            <div class="w3-row">
+                <%= link_to article_path(article) do %>
+                    <div class="w3-col m8 s12">
+                        <p><button class="w3-button w3-padding-large w3-white w3-border"><b>CHECK OUT THIS GREAT ARTICLE »</b></button></p>
+                    </div>
+                <% end %>
+                <div class="w3-col m4 w3-hide-small">
+                    <p>
+                        <span class="w3-padding-large w3-right"><b>Comments  </b> 
+                        <span class="w3-tag"><%= article.comments.length %></span></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
     <% end %>
-</ul>
+</div>
 
-<%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+<!-- Sidebar -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-card w3-margin w3-margin-top">
+        <%= image_tag 'index.png' %>
+          <div class="w3-container w3-white">
+            <h4><b>Jason Barr</b></h4>
+            <p>I found this clip art of a penguin while searching for a placeholder image 
+                and decided that this entire is blog should be about penguins</p>
+          </div>
+      </div><hr>
+    
+      <!-- Popular Posts -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white popular-posts">
+          <% @articles.order("view_cont DESC")[0..2].each do |article| %>
+            <%= link_to article_path(article) do %>
+              <li class="w3-padding-16">
+                <span class="w3-large"><%= article.title %></span><br>
+                <span>Total Views: <%= article.view_cont %></span>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+      <hr> 
+
+      <!-- Labels / tags -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white tags">
+          <p>
+            <% Tag.all.each do |tag| %>
+              <%= link_to tag_path(tag) do %>
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">
+                  <%= tag.name %>
+                </span>
+              <% end %>
+            <% end %>
+          </p>
+        </div>
+      </div>
+    <!-- END Sidebar -->
+    </div>
+
