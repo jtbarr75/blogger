@@ -22,8 +22,6 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 #sorcery for authentication
 gem 'sorcery'
 
-gem 'pg'
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -40,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'pkg-config'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -70,7 +70,7 @@ end
 
 group :production do
   gem 'pg'
-  gem "activerecord-postgresql1-adapter"
+  gem "activerecord-postgresql-adapter"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
